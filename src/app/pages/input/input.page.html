@@ -1,0 +1,21 @@
+<app-header titulo="Input"></app-header>
+<ion-content class="ion-padding">
+
+    <form #formu (ngSubmit)="login()">
+        <ion-list-header>
+            <ion-label>Formulario</ion-label>
+            <ion-button>See All</ion-button>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="text" placeholder="email" name="email" [(ngModel)]="usuario.email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password" placeholder="password" name="password" [(ngModel)]="usuario.password"></ion-input>
+        </ion-item>
+        <ion-button type="submit" expand="block" shape="round">
+            Ingresar
+        </ion-button>
+    </form>
+</ion-content>

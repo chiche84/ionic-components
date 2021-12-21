@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Avatar</ion-title>
+        <ion-avatar slot="end">
+            <img src="/assets/Cruz Orlada.jpg" />
+        </ion-avatar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-chip color="primary" outline="true" *ngFor="let item of [1,1,1,1]">
+        <ion-avatar>
+            <ion-img src="/assets/Cruz Orlada.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Chip Cruz Orlada</ion-label>
+    </ion-chip>
+
+    <ion-list>
+        <ion-item *ngFor="let item of [1,1,1,1]">
+            <ion-avatar slot="start" color="secondary">
+                <ion-img src="/assets/Cruz Orlada.jpg"></ion-img>
+            </ion-avatar>
+            <ion-label>Item Cruz Orlada</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

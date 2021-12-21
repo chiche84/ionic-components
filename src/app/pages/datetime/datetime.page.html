@@ -1,0 +1,26 @@
+<app-header titulo="Date Time">
+
+</app-header>
+
+<ion-content>
+
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>FECHAS</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-list>
+        <ion-item>
+            <ion-label>Fecha de Nacimiento</ion-label>
+            <ion-datetime display-format="DD MMMM YYYY" [value]="fechaNacimiento.toISOString()" (ionChange)="cambioFecha( $event )"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label>AÑOS</ion-label>
+            <ion-datetime display-format="YYYY" min="1984" max="2020"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label>Eventos Personalizados</ion-label>
+            <ion-datetime display-format="DD.MM.YYYY HH:mm" [pickerOptions]="eventosPersonalizados"></ion-datetime>
+        </ion-item>
+    </ion-list>
+</ion-content>
